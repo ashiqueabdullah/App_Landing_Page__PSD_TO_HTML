@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Roboto:wght@400;500;700;900&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+.header-area{
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 40px 0px;
+}
+
+.main-menu ul{
+    margin: 0px;
+}
+.main-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.main-menu ul li a{
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #cfcfd8;
+    padding: 20px 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-menu ul li .submenu{
+    position: absolute;
+    background-color: #4B40DF;
+    width: 200px;
+    top: 150%;
+    left: 15%;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-box-shadow: -1px 10px 38px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 38px -15px rgba(0,0,0,0.75);
+    box-shadow: -1px 10px 38px -15px rgba(0,0,0,0.75);
+}
+.main-menu ul li .submenu li .submenu{
+    top: 0%;
+    left: 100%;
+}
+.main-menu ul li:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.main-menu ul li:hover > a, .main-menu ul li .submenu li:hover >a {
+    color: white;
+}
+.main-menu ul li .submenu li{
+    margin: 0px;
+    display: block;
+}
+.main-menu ul li .submenu li a{
+    color: #cfcfd8;
+    padding: 10px 20px;
+}
+
+.header-btn a{
+    background-color: #6d5ee0;
+    padding: 20px 60px;
+    border-radius: 30px;
+    margin-left: 15px;
+    color: white;
+    transition: .3s;
+}
+.header-btn a:hover{
+    background-color: #ff62a3;
+    color: white;
+}
+
+.slider{
+    background-image: url('../img/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:1170px;
+}
