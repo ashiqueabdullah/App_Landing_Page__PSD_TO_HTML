@@ -16,6 +16,7 @@ h1,h2,h3,h4,h5,h6{
     left: 0;
     right: 0;
     padding: 40px 0px;
+    z-index: 10;
 }
 
 .main-menu ul{
@@ -86,5 +87,78 @@ h1,h2,h3,h4,h5,h6{
     background-image: url('../img/hero.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height:1170px;
+    min-height:100px;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    position: relative;
 }
+
+.slider h2{
+    margin-top: 290px;
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+}
+
+.slider p{
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.slider img{
+    margin-top: 150px;
+    width: 400px;
+    float: right;
+}
+
+.slider .redmore{
+    border-radius: 30px;
+    padding: 10px 30px;
+    background: linear-gradient(to right, #ff64a3 , #ff95a5);
+    color: white;
+    transition: 2s;
+    transition-timing-function: linear;
+}
+.slider .redmore:hover{
+    background: linear-gradient(to left, #ff64a3 , #ff95a5);
+}
+.slider .learnmore{
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin-left: 15px;
+    color: white;
+}
+.slider .learnmore:hover{
+    background-color: white;
+    color:#ff64a3;
+}
+
+.shape .shape-01{
+    width: auto;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+.shape .shape-02{
+    width: auto;
+    position: absolute;
+    left: 1%;
+}
+.imgshape {
+    position: relative;
+}
+.img-shape-01{
+    position: absolute;
+    width: auto!important;
+    top: 6%;
+}
+.img-shape-02 {
+    position: absolute;
+    top: 44%;
+    width: auto!important;
+    left: 75%;
+}
+
